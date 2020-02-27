@@ -1,9 +1,11 @@
-CREATE DATABASE chat;
+DROP DATABASE IF EXISTS chatterfox;
 
-USE chat;
+CREATE DATABASE chatterfox;
+
+USE chatterfox;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
+  id integer, user text, message text, date date
 );
 
 /* Create other tables and define schemas for them here! */
